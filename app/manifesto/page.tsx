@@ -19,55 +19,62 @@ export default function Manifesto() {
               <div className="space-y-12">
                 <div className="space-y-6">
                   <h1 className="text-4xl md:text-5xl font-serif font-light tracking-tight">Our Manifesto</h1>
-                  <p className="text-xl text-muted-foreground font-light leading-relaxed">
-                    The principles that guide our research and shape our perspective on the future of industries and
-                    capital.
-                  </p>
                 </div>
 
                 <div className="prose prose-lg max-w-none">
                   <div className="space-y-8 font-light leading-relaxed">
-                    <div>
-                      <h2 className="text-2xl font-serif font-light mb-4">Follow the Money</h2>
-                      <p className="text-muted-foreground">
-                        Capital flows reveal truth. We track where money moves, who makes the decisions, and what drives
-                        allocation. In a world of noise, financial data cuts through to show what actually matters.
-                      </p>
+                    <p className="text-lg text-muted-foreground">
+                      Playing Field is a media collective dedicated to building a deep understanding of business, markets, and technology.
+                    </p>
+
+                    <p className="text-lg text-muted-foreground">
+                      We do this by organizing podcasts, interview series, digital summits, and other experiments that enable people who are dedicated toward this pursuit to share their learnings.
+                    </p>
+
+                    <p className="text-lg text-muted-foreground">
+                      We try our best to exhibit the following values in this pursuit:
+                    </p>
+
+                    <div className="space-y-8 mt-8">
+                      <div>
+                        <h2 className="text-2xl font-serif font-light mb-4">A Relentless Desire to Learn</h2>
+                        <p className="text-lg text-muted-foreground">
+                          You can learn anything, and everything that was built or discovered was done by someone no smarter than you.
+                        </p>
+                      </div>
+
+                      <div>
+                        <h2 className="text-2xl font-serif font-light mb-4">Earnestness and Purity of Mind</h2>
+                        <p className="text-lg text-muted-foreground">
+                          The best learning comes from approaching topics with genuine intention and thinking clearly without hidden agendas.
+                        </p>
+                      </div>
+
+                      <div>
+                        <h2 className="text-2xl font-serif font-light mb-4">100 Reps</h2>
+                        <p className="text-lg text-muted-foreground">
+                          Deep understanding emerges from repetition—consuming hundreds of interviews, studying countless case studies, and engaging with ideas from every angle until patterns become clear.
+                        </p>
+                      </div>
+
+                      <div>
+                        <h2 className="text-2xl font-serif font-light mb-4">Positive Sum Mindset</h2>
+                        <p className="text-lg text-muted-foreground">
+                          Value creation works best as a multiplayer game, and contributing to others' success without keeping score builds the relationships that unlock the most interesting opportunities.
+                        </p>
+                      </div>
+
+                      <div>
+                        <h2 className="text-2xl font-serif font-light mb-4">Serendipity is Always Around the Corner</h2>
+                        <p className="text-lg text-muted-foreground">
+                          The most valuable connections and insights appear when you least expect them, which is why we show up consistently on a daily basis.
+                        </p>
+                      </div>
                     </div>
 
-                    <div>
-                      <h2 className="text-2xl font-serif font-light mb-4">Question the Thesis</h2>
-                      <p className="text-muted-foreground">
-                        Every investment has a story. We dig deeper than the pitch deck, beyond the headlines, to
-                        understand the fundamental assumptions that drive billion-dollar bets. The best insights come
-                        from challenging conventional wisdom.
-                      </p>
-                    </div>
-
-                    <div>
-                      <h2 className="text-2xl font-serif font-light mb-4">Go Down the Rabbit Hole</h2>
-                      <p className="text-muted-foreground">
-                        The most interesting opportunities hide in the details. We explore the technical specifications,
-                        regulatory nuances, and supply chain dynamics that others overlook. Depth beats breadth when it
-                        comes to understanding what's next.
-                      </p>
-                    </div>
-
-                    <div>
-                      <h2 className="text-2xl font-serif font-light mb-4">Industries Shape the Future</h2>
-                      <p className="text-muted-foreground">
-                        Technology gets the headlines, but industries build the world. From packaging to petrochemicals,
-                        maritime to manufacturing—these sectors move trillions of dollars and employ millions of people.
-                        Understanding their evolution is key to understanding our collective future.
-                      </p>
-                    </div>
-
-                    <div>
-                      <h2 className="text-2xl font-serif font-light mb-4">Expertise Over Opinion</h2>
-                      <p className="text-muted-foreground">
-                        We connect with operators, investors, and domain experts who have skin in the game. Their
-                        insights come from years of experience, not hours of research. Real knowledge comes from those
-                        who build, buy, and bet on these industries every day.
+                    <div className="mt-12 pt-8 border-t">
+                      <p className="text-lg text-muted-foreground">
+                        If you're interested in learning with us or working with us, we'd love to hear from you. Get in touch and let's explore what we can build together.
                       </p>
                     </div>
                   </div>

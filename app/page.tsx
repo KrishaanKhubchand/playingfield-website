@@ -1,9 +1,22 @@
+"use client"
+
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
+import { useState, useEffect } from "react"
 
 import { Button } from "@/components/ui/button"
 
 export default function RabbitholeCapital() {
+  const [showComingSoon, setShowComingSoon] = useState(false)
+  
+  useEffect(() => {
+    if (showComingSoon) {
+      const timer = setTimeout(() => {
+        setShowComingSoon(false)
+      }, 3000)
+      return () => clearTimeout(timer)
+    }
+  }, [showComingSoon])
   return (
     <div className="flex min-h-screen flex-col bg-gray-50 relative">
       <main className="flex-1 relative z-10">
@@ -115,7 +128,7 @@ export default function RabbitholeCapital() {
                   </div>
                 </Link>
 
-                <Link href="/crypto-ai-summit" className="group cursor-pointer">
+                <div onClick={() => setShowComingSoon(true)} className="group cursor-pointer relative">
                   <div className="aspect-square overflow-hidden rounded-lg mb-4">
                     <img
                       src="/images/crypto-ai-summit.jpeg"
@@ -133,7 +146,22 @@ export default function RabbitholeCapital() {
                       Daily conversations with industry leaders
                     </p>
                   </div>
-                </Link>
+                  
+                  {/* Coming Soon Popup */}
+                  {showComingSoon && (
+                    <div className="absolute -top-16 left-1/2 transform -translate-x-1/2 z-50 animate-in fade-in zoom-in duration-200">
+                      <div className="bg-white border border-gray-200 rounded-lg shadow-lg px-4 py-3 relative">
+                        <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-4 h-4 bg-white border-b border-r border-gray-200 rotate-45"></div>
+                        <p className="text-sm font-medium text-gray-900 whitespace-nowrap">
+                          Coming Soon! 🚀
+                        </p>
+                        <p className="text-xs text-gray-500 mt-1">
+                          Stay tuned for updates
+                        </p>
+                      </div>
+                    </div>
+                  )}
+                </div>
 
                 <Link href="/consumer-growth-summit" className="group cursor-pointer">
                   <div className="aspect-square overflow-hidden rounded-lg mb-4">
