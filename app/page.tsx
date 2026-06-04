@@ -37,35 +37,6 @@ const brands: Brand[] = [
   },
 ]
 
-type Format = {
-  label: string
-  blurb: string
-  accent: string
-}
-
-const formats: Format[] = [
-  {
-    label: "Journals",
-    blurb: "Deep, sector-specific magazines, published in cycles.",
-    accent: "bg-amber-50 border-amber-200",
-  },
-  {
-    label: "Interview Series",
-    blurb: "Multi-week deep-dives with the operators inside each industry.",
-    accent: "bg-sky-50 border-sky-200",
-  },
-  {
-    label: "Podcasts",
-    blurb: "Long-form conversations with the investors and builders shaping each sector.",
-    accent: "bg-rose-50 border-rose-200",
-  },
-  {
-    label: "Newsletters",
-    blurb: "Briefings on the industries we cover, written by the people reading them with us.",
-    accent: "bg-emerald-50 border-emerald-200",
-  },
-]
-
 const howWeDoIt = [
   {
     label: "Choose",
@@ -127,22 +98,10 @@ export default function Home3() {
           </svg>
 
           <div className="container px-4 md:px-6 relative">
-            <div className="max-w-4xl mx-auto text-center space-y-10">
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-white border border-black/10 rounded-full text-xs uppercase tracking-[0.18em] text-muted-foreground">
-                The Playing Field
-              </div>
-
-              <h1 className="font-serif font-light tracking-tight leading-[1.05] text-4xl md:text-6xl lg:text-7xl text-foreground">
-                Go deep on the industries
-                <br />
-                that move markets.
+            <div className="max-w-5xl mx-auto text-center space-y-10">
+              <h1 className="font-serif font-light tracking-tight leading-[1.1] text-3xl md:text-4xl lg:text-5xl text-foreground text-balance mx-auto max-w-4xl">
+                Playing Field is a media group covering the industries that shape the global economy.
               </h1>
-
-              <p className="text-base md:text-lg text-muted-foreground font-light max-w-2xl mx-auto leading-relaxed">
-                From in-depth journals to interview series, Playing Field is built to give readers
-                the inside view on the sectors shaping global capital — by the people who run
-                them, not the people who cover them.
-              </p>
 
               <div className="pt-4">
                 <Button className="rounded-full bg-foreground text-background px-7 py-6 font-light hover:bg-foreground/90">
@@ -155,7 +114,7 @@ export default function Home3() {
         </section>
 
         {/* Brand mosaic */}
-        <section className="w-full pb-24 relative">
+        <section id="publications" className="w-full pb-24 relative scroll-mt-24">
           <div className="container px-4 md:px-6">
             <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-5 md:gap-8 items-end">
               {brands.map((b, i) => (
@@ -187,42 +146,55 @@ export default function Home3() {
           </div>
         </section>
 
-        {/* Sub-hero: reader promise + format cards */}
+        {/* About */}
         <section className="w-full py-24 border-t bg-white">
           <div className="container px-4 md:px-6">
-            <div className="max-w-3xl mx-auto text-center mb-16 space-y-6">
-              <h2 className="font-serif font-light tracking-tight text-3xl md:text-5xl leading-tight">
-                Understand an industry
-                <br />
-                without the surface coverage.
-              </h2>
-              <p className="text-base md:text-lg text-muted-foreground font-light leading-relaxed max-w-2xl mx-auto">
-                Each of our publications takes a single industry and goes deep — built so the
-                people who read it know how it actually moves, who&rsquo;s building it, and where
-                the capital is going.
+            <div className="max-w-3xl mx-auto">
+              <p className="text-sm md:text-base uppercase tracking-[0.22em] text-muted-foreground mb-8">
+                About
               </p>
-              <p className="text-sm text-muted-foreground/80 italic">
-                By the people inside each industry, for the next generation of them.
-              </p>
-            </div>
 
-            <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {formats.map((f, i) => (
-                <div
-                  key={f.label}
-                  className={`rounded-md border ${f.accent} p-6 flex flex-col gap-3 transition-transform hover:-translate-y-1 ${
-                    i % 2 === 0 ? "md:translate-y-3" : ""
-                  }`}
+              <div className="space-y-7 text-xl md:text-2xl font-light leading-relaxed text-foreground">
+                <p>
+                  Playing Field is a global media group, home to the defining publications of the
+                  world&rsquo;s most consequential industries.
+                </p>
+                <p>
+                  Economies advance on information. Yet the industries that move the most capital are
+                  often the least understood — their expertise held by a small number of firms and the
+                  people who lead them.
+                </p>
+                <p>
+                  Playing Field exists to make that expertise accessible. Each publication is reported
+                  from within its industry, through the principals who shape it, and becomes the
+                  authority in its field — the standard reference for how it works, and where it is
+                  going.
+                </p>
+                <p>
+                  Today, the group publishes across private credit, infrastructure, hospitality, and
+                  technology investment, with further titles in development.
+                </p>
+              </div>
+
+              <p className="mt-12 text-xl md:text-2xl font-light leading-relaxed text-foreground">
+                We&rsquo;re building a home for the most curious people in every industry. Come join us.
+              </p>
+
+              <div className="mt-8 flex flex-col sm:flex-row gap-3">
+                <Button
+                  asChild
+                  className="rounded-full bg-foreground text-background px-7 py-6 font-light hover:bg-foreground/90"
                 >
-                  <p className="text-xs uppercase tracking-[0.2em] text-foreground/70">
-                    Format
-                  </p>
-                  <h3 className="font-serif text-2xl font-light leading-tight">{f.label}</h3>
-                  <p className="text-sm text-muted-foreground font-light leading-relaxed">
-                    {f.blurb}
-                  </p>
-                </div>
-              ))}
+                  <Link href="/fellowship">Join us</Link>
+                </Button>
+                <Button
+                  asChild
+                  variant="outline"
+                  className="rounded-full px-7 py-6 font-light border-black/15"
+                >
+                  <Link href="#publications">Read the publications</Link>
+                </Button>
+              </div>
             </div>
           </div>
         </section>
