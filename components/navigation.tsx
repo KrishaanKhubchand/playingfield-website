@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Button } from "@/components/ui/button"
+import { SubscribeButton } from "@/components/subscribe-button"
 
 export function Navigation() {
   return (
@@ -13,12 +13,10 @@ export function Navigation() {
             <Link href="/manifesto" className="font-light text-sm hover:text-muted-foreground transition-colors">
               Manifesto
             </Link>
-            <Link href="/fellowship" className="font-light text-sm hover:text-muted-foreground transition-colors">
-              Fellowship
+            <Link href="/fellowships" className="font-light text-sm hover:text-muted-foreground transition-colors">
+              Fellowships
             </Link>
-            <Button variant="ghost" className="font-light">
-              Subscribe
-            </Button>
+            <SubscribeButton />
           </div>
         </div>
       </div>

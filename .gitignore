@@ -28,3 +28,6 @@ next-env.d.ts
 
 # image backups (kept locally for safe revert)
 /public/images/.originals/
+
+# Playwright debug artifacts
+.playwright-mcp/

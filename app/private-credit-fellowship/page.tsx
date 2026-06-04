@@ -4,56 +4,70 @@ import { useState } from "react"
 
 const benefits = [
   {
-    title: "Senior Relationships",
+    title: "Build direct relationships with the best in the asset class",
     description:
-      "Direct relationships with the senior investors and allocators shaping private credit — the people you'd otherwise spend years trying to meet.",
+      "Interview the senior investors and allocators shaping private credit — on the record, every week. The relationships compound long after the fellowship ends.",
   },
   {
-    title: "A Published Portfolio",
+    title: "Develop a genuine understanding of how private credit works",
     description:
-      "In-depth interviews and analysis under your name, distributed through Private Credit Journal. Work that lives on as a calling card.",
+      "Go deep on one corner of the market and learn how capital actually moves through it. Many of the best investors started exactly this way — Harry Stebbings built 20VC by interviewing the people he wanted to learn from.",
   },
   {
-    title: "Editorial Mentorship",
+    title: "Produce a body of work that signals seriousness",
     description:
-      "Work directly with the founding team on developing your thesis, sharpening your questions, and shaping editorial direction.",
+      "Publish a canonical resource on the topics you cover — a portfolio that keeps working for you long after the programme ends.",
+  },
+]
+
+const criteria = [
+  {
+    title: "Genuine curiosity about finance and private credit",
+    description:
+      "You're drawn to how capital actually moves through the economy, and you want to spend six months going deep on one of its most consequential corners.",
   },
   {
-    title: "A Path Into the Industry",
+    title: "A basic financial background — or the commitment to build one fast",
     description:
-      "Deep expertise in a corner of the market that matters, plus the network that turns expertise into opportunity.",
+      "You can engage with the substance — covenants, structuring, fund mechanics, the rest — or you're ready to do the work to get there.",
+  },
+  {
+    title: "Communication and gravitas",
+    description:
+      "You write and speak clearly, and you can hold your own across the table from a senior practitioner. The access we offer only compounds if interviewees come away impressed.",
+  },
+  {
+    title: "Reliability",
+    description:
+      "The fellowship is built around ownership. We expect you to ship on cadence, follow up on outreach, and treat interviewees' time with the seriousness it deserves.",
+  },
+  {
+    title: "Availability",
+    description:
+      "Six months at roughly 10–20 hours per week. You should have the bandwidth to commit consistently.",
   },
 ]
 
 const faqs = [
   {
-    question: "Who is the fellowship for?",
-    answer:
-      "Early-career talent who are genuinely curious about finance and want to build deep expertise in private credit. Backgrounds we welcome: MBA, JD, undergraduate, finance, journalism, law, policy, or something less obvious. Basic financial background helps; a commitment to build one is enough.",
-  },
-  {
-    question: "How long is the program?",
-    answer: "6 months, with the network and relationships continuing long after.",
-  },
-  {
-    question: "What's the time commitment?",
-    answer:
-      "Roughly 10–20 hours per week. Designed to fit alongside your studies, current job, or other work.",
-  },
-  {
-    question: "Is it paid?",
-    answer:
-      "Not for the inaugural cohort. As Private Credit Journal grows, we expect to introduce stipends for future cohorts. The work you publish is yours, and it's distributed under your name.",
-  },
-  {
-    question: "How does the application work?",
-    answer:
-      "About 15 minutes, including a 90-second video. We review every application within a week. Selected applicants have a conversation with the founding team and complete a short trial task.",
-  },
-  {
     question: "What does a fellow actually do?",
     answer:
-      "Develop a thesis on a specific corner of private credit, build an outreach pipeline, conduct in-depth interviews with senior investors and allocators, and contribute to the editorial direction of the publication.",
+      "Pick a coverage area in private credit, build an outreach pipeline, and run long-form interviews with senior practitioners — turning each into a published Q&A. A simple loop: find the right people, ask the right questions, and publish work people learn from.",
+  },
+  {
+    question: "Is the fellowship remote?",
+    answer:
+      "Yes — fellows work remotely on their own schedule, with regular check-ins with the founding team.",
+  },
+  {
+    question: "How do I choose a coverage area?",
+    answer:
+      "You pick a beat from a shortlist, or propose your own, when you apply. Committing to one upfront is part of how we select.",
+  },
+  {
+    question: "What happens after the fellowship?",
+    answer:
+      "The relationships, the published work, and the expertise are yours to keep — a foundation many fellows use to move into investing roles in the asset class.",
   },
 ]
 
@@ -64,18 +78,19 @@ export default function PrivateCreditFellowship() {
     <main className="min-h-screen bg-white text-black">
       {/* Hero */}
       <section className="px-6 pt-24 pb-20 md:pt-32 md:pb-24">
-        <div className="max-w-3xl mx-auto text-center space-y-10">
+        <div className="max-w-4xl mx-auto text-center space-y-10">
           <div className="inline-flex items-center px-4 py-2 rounded-full border border-black/15 text-xs uppercase tracking-[0.2em] text-black/70">
             Inaugural Cohort • Applications Open
           </div>
 
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.1] text-black">
-            A 6-month fellowship for the next generation of private credit researchers.
+          <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight leading-[1.05] text-black">
+            The Private Credit Fellowship for University Students
           </h1>
 
-          <p className="text-lg md:text-xl text-black/70 leading-relaxed max-w-2xl mx-auto">
-            Go deep on the corners of the market that matter — alongside the senior
-            investors and allocators shaping them.
+          <p className="text-xl md:text-2xl text-black/70 leading-relaxed max-w-4xl mx-auto">
+            A six-month fellowship designed to connect ambitious university students with
+            practitioners working in private credit, deepen their understanding of the asset
+            class, and give them a platform to build a lasting career in it.
           </p>
 
           <div className="pt-4">
@@ -86,7 +101,7 @@ export default function PrivateCreditFellowship() {
               Apply Now
             </a>
             <p className="text-sm text-black/50 mt-4">
-              About 15 minutes, including a 90-second video.
+              It takes under 2 minutes to apply.
             </p>
           </div>
         </div>
@@ -112,63 +127,54 @@ export default function PrivateCreditFellowship() {
         </div>
       </section>
 
-      {/* About */}
+      {/* The Opportunity */}
       <section className="px-6 py-24">
-        <div className="max-w-2xl mx-auto space-y-5">
+        <div className="max-w-2xl mx-auto space-y-6">
           <h2 className="text-xs font-bold uppercase tracking-[0.2em] text-black mb-10 text-center">
-            About
+            The Opportunity
           </h2>
           <p className="text-lg leading-relaxed text-black">
-            The Private Credit Fellowship is designed to help curious, early-career
-            talent develop real expertise in private credit — by going deep on a specific
-            corner of the market and publishing the kinds of interviews and analysis that
-            build a reputation.
-          </p>
-          <p className="text-lg leading-relaxed text-black">As a fellow, you&apos;ll:</p>
-          <ul className="space-y-3 pt-2">
-            <li className="text-lg leading-relaxed text-black flex items-start gap-3">
-              <span className="text-black/40 select-none mt-0.5">→</span>
-              Develop a thesis on a specific corner of private credit
-            </li>
-            <li className="text-lg leading-relaxed text-black flex items-start gap-3">
-              <span className="text-black/40 select-none mt-0.5">→</span>
-              Build an outreach pipeline to the senior leaders shaping that market
-            </li>
-            <li className="text-lg leading-relaxed text-black flex items-start gap-3">
-              <span className="text-black/40 select-none mt-0.5">→</span>
-              Conduct in-depth interviews with investors, allocators, and operators
-            </li>
-            <li className="text-lg leading-relaxed text-black flex items-start gap-3">
-              <span className="text-black/40 select-none mt-0.5">→</span>
-              Contribute to the editorial direction of Private Credit Journal
-            </li>
-          </ul>
-          <p className="text-lg leading-relaxed text-black pt-4">
-            This is an unpaid fellowship for the inaugural cohort. As Private Credit
-            Journal grows, we expect to introduce stipends for future cohorts. The
-            work you publish is yours, and it&apos;s distributed under your name.
+            We&apos;re launching a fellowship programme for ambitious university students, in
+            collaboration with <span className="font-bold">The Private Credit Journal</span> — a
+            market-leading publication focused on private credit.
           </p>
           <p className="text-lg leading-relaxed text-black">
-            We&apos;re only accepting four junior fellows in this inaugural cohort, to
-            keep the cohort tight and the editorial quality high.
+            Private credit has moved from a niche corner of finance to a core layer of how the
+            modern economy is financed — from corporate lending to infrastructure to the financing
+            stacks behind private equity. The tailwind behind it is one of the longest in finance,
+            and the asset class is only getting more central from here.
+          </p>
+          <p className="text-lg leading-relaxed text-black">
+            Our aim is to give ambitious students a real foothold in the asset class — through
+            self-directed research, direct connection with practitioners, and a body of work built
+            alongside the publication.
           </p>
         </div>
       </section>
 
-      {/* What You Get */}
-      <section className="px-6 py-24 bg-black/[0.02] border-y border-black/10">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-xs font-bold uppercase tracking-[0.2em] text-black mb-12 text-center">
-            What You Get
-          </h2>
-          <div className="space-y-6">
-            {benefits.map((benefit) => (
-              <div key={benefit.title} className="border-b border-black/10 pb-6 last:border-b-0">
-                <p className="text-lg leading-relaxed text-black">
-                  <span className="font-bold">{benefit.title}</span>
-                  {" — "}
-                  {benefit.description}
-                </p>
+      {/* What You'll Get (numbered editorial rows) */}
+      <section className="px-6 py-24 bg-gray-50 border-y border-black/10">
+        <div className="max-w-4xl mx-auto">
+          <div className="flex items-baseline gap-4 mb-14">
+            <h2 className="text-xs font-bold uppercase tracking-[0.2em] text-black">What You&apos;ll Get</h2>
+            <div className="h-px flex-1 bg-black/10" />
+          </div>
+
+          <div className="space-y-12 md:space-y-14">
+            {benefits.map((b, i) => (
+              <div
+                key={b.title}
+                className="grid grid-cols-1 md:grid-cols-[auto_1fr] gap-3 md:gap-10 items-start border-t border-black/10 pt-10 first:border-t-0 first:pt-0"
+              >
+                <span className="text-5xl md:text-6xl font-extrabold tracking-tight text-black/20 leading-none tabular-nums">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <div>
+                  <h3 className="text-2xl md:text-3xl font-extrabold tracking-tight text-black mb-3">
+                    {b.title}
+                  </h3>
+                  <p className="text-black/70 leading-relaxed text-lg max-w-2xl">{b.description}</p>
+                </div>
               </div>
             ))}
           </div>
@@ -176,25 +182,108 @@ export default function PrivateCreditFellowship() {
       </section>
 
       {/* Who Should Apply */}
-      <section className="px-6 py-24">
+      <section className="px-6 py-24 bg-black/[0.02] border-y border-black/10">
         <div className="max-w-2xl mx-auto space-y-5">
           <h2 className="text-xs font-bold uppercase tracking-[0.2em] text-black mb-10 text-center">
-            Who Should Apply
+            What We&apos;re Looking For
           </h2>
-          <p className="text-lg leading-relaxed text-black">
-            We&apos;re looking for people who are genuinely curious about finance, can
-            communicate clearly, and will show up reliably for six months.
-          </p>
-          <p className="text-lg leading-relaxed text-black">
-            We welcome backgrounds you&apos;d expect — MBA, JD, undergraduate, finance,
-            journalism, law, policy — and backgrounds you wouldn&apos;t. A basic financial
-            foundation helps. A serious commitment to build one is enough.
+          <p className="text-lg leading-relaxed text-black">We care about a few things:</p>
+          <ul className="space-y-5 pt-1">
+            {criteria.map((c) => (
+              <li key={c.title} className="text-lg leading-relaxed text-black">
+                <span className="font-bold">{c.title}.</span> {c.description}
+              </li>
+            ))}
+          </ul>
+          <p className="text-lg leading-relaxed text-black pt-4">
+            We see this as closer to research — laying the foundation to think about private credit
+            as an investor — than pure-play journalism. We like opportunism and a taste for ideas.
           </p>
         </div>
       </section>
 
+      {/* Program Details */}
+      <section className="px-6 py-24">
+        <div className="max-w-2xl mx-auto">
+          <h2 className="text-xs font-bold uppercase tracking-[0.2em] text-black mb-10 text-center">
+            Program Details
+          </h2>
+          <dl className="border-y border-black/10 divide-y divide-black/10">
+            <div className="grid grid-cols-1 sm:grid-cols-[9rem_1fr] gap-1 sm:gap-6 py-5">
+              <dt className="text-xs font-bold uppercase tracking-[0.18em] text-black/50 sm:pt-1">
+                Format
+              </dt>
+              <dd className="text-lg leading-relaxed text-black">
+                A six-month fellowship, ~10–20 hours per week — designed to fit alongside your
+                studies or current work.
+              </dd>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-[9rem_1fr] gap-1 sm:gap-6 py-5">
+              <dt className="text-xs font-bold uppercase tracking-[0.18em] text-black/50 sm:pt-1">
+                Cohort
+              </dt>
+              <dd className="text-lg leading-relaxed text-black">
+                Four junior fellows in the inaugural cohort.
+              </dd>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-[9rem_1fr] gap-1 sm:gap-6 py-5">
+              <dt className="text-xs font-bold uppercase tracking-[0.18em] text-black/50 sm:pt-1">
+                Who it&apos;s for
+              </dt>
+              <dd className="text-lg leading-relaxed text-black">
+                Undergraduates, MBAs, JDs, and others early in their careers. We&apos;re open on
+                background — what matters is that you can engage credibly with practitioners and
+                write well.
+              </dd>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-[9rem_1fr] gap-1 sm:gap-6 py-5">
+              <dt className="text-xs font-bold uppercase tracking-[0.18em] text-black/50 sm:pt-1">
+                Compensation
+              </dt>
+              <dd className="text-lg leading-relaxed text-black">
+                Unpaid for now, with stipends as the publication grows.
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      {/* How to Apply */}
+      <section id="apply" className="px-6 py-24 bg-black/[0.02] border-y border-black/10 scroll-mt-20">
+        <div className="max-w-2xl mx-auto space-y-6">
+          <h2 className="text-xs font-bold uppercase tracking-[0.2em] text-black mb-10 text-center">
+            How to Apply
+          </h2>
+          <p className="text-lg leading-relaxed text-black">
+            Applying takes a few minutes — submit your CV and complete a short application form.
+            We review every application within a week, and if yours stands out, we&apos;ll set up a
+            conversation with the founding team and a short trial task before extending an offer.
+          </p>
+
+          <div className="pt-2">
+            <h3 className="text-base font-bold text-black mb-3">How to Stand Out</h3>
+            <p className="text-lg leading-relaxed text-black">
+              We weight initiative highly — it&apos;s one of the clearest signals of agency. If
+              private credit is new to you but you&apos;ve taught yourself the fundamentals, broken
+              down a real deal, or worked through the basics on your own, show us — that matters more
+              than credentials. The candidates who stand out have already started doing the work
+              before they&apos;re asked.
+            </p>
+          </div>
+
+          <div className="pt-6 text-center">
+            <a
+              href="#"
+              className="inline-block bg-black text-white text-sm font-bold uppercase tracking-[0.2em] px-10 py-5 hover:opacity-80 transition-opacity"
+            >
+              Apply Now
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ */}
-      <section className="px-6 py-24 bg-black/[0.02] border-y border-black/10">
+      <section className="px-6 py-24">
         <div className="max-w-2xl mx-auto">
           <h2 className="text-xs font-bold uppercase tracking-[0.2em] text-black mb-12 text-center">
             FAQ
@@ -206,17 +295,13 @@ export default function PrivateCreditFellowship() {
                   onClick={() => setOpenIndex(openIndex === i ? null : i)}
                   className="w-full py-5 flex justify-between items-center text-left"
                 >
-                  <span className="text-base md:text-lg font-bold text-black">
-                    {faq.question}
-                  </span>
+                  <span className="text-base md:text-lg font-bold text-black">{faq.question}</span>
                   <span className="text-black/40 ml-4 text-xl font-light">
                     {openIndex === i ? "−" : "+"}
                   </span>
                 </button>
                 {openIndex === i && (
-                  <p className="pb-5 text-base leading-relaxed text-black/80">
-                    {faq.answer}
-                  </p>
+                  <p className="pb-5 text-base leading-relaxed text-black/80">{faq.answer}</p>
                 )}
               </div>
             ))}
@@ -225,25 +310,22 @@ export default function PrivateCreditFellowship() {
       </section>
 
       {/* Closing CTA */}
-      <section id="apply" className="px-6 py-32 scroll-mt-20">
+      <section className="px-6 py-32 bg-black/[0.02] border-t border-black/10">
         <div className="max-w-2xl mx-auto text-center space-y-8">
           <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight leading-[1.1] text-black">
             Ready to apply?
           </h2>
           <p className="text-lg text-black/70 leading-relaxed">
-            About 15 minutes — including a 90-second video. We review every application
-            within a week.
+            It takes under 2 minutes to apply. We review every application within a week.
           </p>
           <div className="pt-4">
             <a
-              href="#"
+              href="#apply"
               className="inline-block bg-black text-white text-sm font-bold uppercase tracking-[0.2em] px-10 py-5 hover:opacity-80 transition-opacity"
             >
               Apply Now
             </a>
-            <p className="text-sm text-black/50 mt-4">
-              When in doubt, just apply.
-            </p>
+            <p className="text-sm text-black/50 mt-4">When in doubt, just apply.</p>
           </div>
         </div>
       </section>
@@ -252,7 +334,7 @@ export default function PrivateCreditFellowship() {
       <footer className="px-6 py-12 border-t border-black/10">
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-[10px] uppercase tracking-[0.25em] text-black/50">
-            © {new Date().getFullYear()} Private Credit Fellowship · Private Credit Journal
+            © {new Date().getFullYear()} Private Credit Fellowship · The Private Credit Journal
           </p>
         </div>
       </footer>
