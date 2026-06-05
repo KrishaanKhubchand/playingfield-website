@@ -2,10 +2,12 @@
 
 import { useState } from "react"
 import { Check } from "lucide-react"
+import { usePlausible } from "next-plausible"
 
 import { Button } from "@/components/ui/button"
 
 export function SubscribeForm() {
+  const plausible = usePlausible()
   const [email, setEmail] = useState("")
   const [submitted, setSubmitted] = useState(false)
 
@@ -23,6 +25,7 @@ export function SubscribeForm() {
       onSubmit={(e) => {
         e.preventDefault()
         if (!email.trim()) return
+        plausible("Subscribe")
         setSubmitted(true)
       }}
       className="flex items-center gap-2 w-full md:w-auto"
