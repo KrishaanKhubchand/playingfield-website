@@ -268,7 +268,7 @@ export default function HomeLLPage() {
                     i % 2 === 0 ? "md:translate-y-6" : "md:-translate-y-2"
                   }`}
                 >
-                  <div className="aspect-[3/4] overflow-hidden rounded-xl bg-white/50 border border-[#0A2E65]/[0.06] shadow-sm group-hover:shadow-lg group-hover:border-[#0A2E65]/15 transition-all duration-300">
+                  <div className="aspect-[3/4] overflow-hidden rounded-xl transition-all duration-300">
                     <img
                       src={b.image}
                       alt={b.title}
@@ -420,7 +420,7 @@ export default function HomeLLPage() {
                   }`}
                 >
                   <div className="md:col-span-2">
-                    <div className="aspect-[3/4] overflow-hidden rounded-2xl bg-white/60 border border-[#0A2E65]/[0.06] shadow-sm hover:shadow-lg transition-shadow duration-300">
+                    <div className="aspect-[3/4] overflow-hidden rounded-2xl transition-shadow duration-300">
                       <img
                         src={b.image}
                         alt={b.eyebrow}
