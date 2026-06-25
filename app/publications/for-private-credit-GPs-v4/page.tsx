@@ -35,7 +35,7 @@ function Avatar({ initials, bg }: { initials: string; bg: string }) {
 
 function PhoneFrame({ children, className = "" }: { children: React.ReactNode; className?: string }) {
   return (
-    <div className={`relative w-[280px] rounded-[40px] p-3 shadow-2xl ${className}`}
+    <div className={`relative w-[250px] rounded-[40px] p-3 shadow-2xl ${className}`}
          style={{ backgroundColor: DARK, border: `1px solid ${GOLD}33` }}>
       <div className="flex items-center justify-between px-5 pb-2 pt-3 text-[11px] font-semibold text-white">
         <span>9:41</span>
@@ -229,9 +229,9 @@ export default function ForPrivateCreditGPsV4() {
 
             {/* right — phones */}
             <div className="relative flex justify-center lg:justify-end">
-              <div className="relative h-[620px] w-[420px]">
+              <div className="relative h-[580px] w-[380px]">
                 <div className="absolute left-0 top-0"><PhoneFeed /></div>
-                <div className="absolute left-[150px] top-[24px]"><PhoneDetail /></div>
+                <div className="absolute left-[80px] top-[28px]"><PhoneDetail /></div>
               </div>
             </div>
           </div>

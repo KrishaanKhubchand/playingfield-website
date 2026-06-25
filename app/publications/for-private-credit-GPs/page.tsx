@@ -50,7 +50,7 @@ function TrustBar() {
 function PhoneFrame({ children, className = "" }: { children: React.ReactNode; className?: string }) {
   return (
     <div
-      className={`relative w-[280px] rounded-[40px] bg-[#111827] p-3 shadow-2xl ring-1 ring-white/10 ${className}`}
+      className={`relative w-[250px] rounded-[40px] bg-[#111827] p-3 shadow-2xl ring-1 ring-white/10 ${className}`}
     >
       {/* status bar */}
       <div className="flex items-center justify-between px-5 pb-2 pt-3 text-[11px] font-semibold text-white">
@@ -271,9 +271,9 @@ export default function ForPrivateCreditGPs() {
 
             {/* right — phones */}
             <div className="relative flex justify-center lg:justify-end">
-              <div className="relative h-[620px] w-[420px]">
+              <div className="relative h-[580px] w-[380px]">
                 <div className="absolute left-0 top-0"><PhoneFeed /></div>
-                <div className="absolute left-[150px] top-[24px]"><PhoneDetail /></div>
+                <div className="absolute left-[80px] top-[28px]"><PhoneDetail /></div>
               </div>
             </div>
           </div>

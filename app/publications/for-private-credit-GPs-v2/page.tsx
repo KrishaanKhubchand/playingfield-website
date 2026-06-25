@@ -75,7 +75,7 @@ function PhoneFrame({
 }) {
   return (
     <div
-      className={`relative w-[280px] rounded-[40px] border-2 border-zinc-700 bg-black p-3 shadow-[0_0_60px_rgba(76,175,80,0.15)] ${className}`}
+      className={`relative w-[250px] rounded-[40px] border-2 border-zinc-700 bg-black p-3 shadow-[0_0_60px_rgba(76,175,80,0.15)] ${className}`}
     >
       {/* notch */}
       <div className="mx-auto mb-1 h-6 w-28 rounded-full bg-zinc-900" />
@@ -461,9 +461,9 @@ export default function ForPrivateCreditGPsV2() {
 
           {/* phones */}
           <div className="mt-16 flex justify-center">
-            <div className="relative h-[620px] w-[420px]">
+            <div className="relative h-[580px] w-[380px]">
               <div className="absolute left-0 top-0"><PhoneFeed /></div>
-              <div className="absolute left-[150px] top-[24px]"><PhoneDetail /></div>
+              <div className="absolute left-[80px] top-[28px]"><PhoneDetail /></div>
             </div>
           </div>
         </div>
