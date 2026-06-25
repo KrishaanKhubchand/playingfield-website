@@ -229,9 +229,9 @@ export default function ForPrivateCreditGPsV4() {
 
             {/* right — phones */}
             <div className="relative flex justify-center lg:justify-end">
-              <div className="relative h-[580px] w-[380px]">
-                <div className="absolute left-0 top-0"><PhoneFeed /></div>
-                <div className="absolute left-[80px] top-[28px]"><PhoneDetail /></div>
+              <div className="relative h-[600px] w-[300px]">
+                <div className="absolute left-0 top-[28px] z-0"><PhoneDetail /></div>
+                <div className="absolute left-[60px] top-0 z-10"><PhoneFeed /></div>
               </div>
             </div>
           </div>
