@@ -188,7 +188,7 @@ export default function ForPrivateCreditGPsV4() {
       <main className="flex-1">
         {/* hero */}
         <div className="container px-4 md:px-6">
-          <div className="grid min-h-[85vh] items-center gap-12 py-16 lg:grid-cols-2 lg:gap-20">
+          <div className="grid min-h-[85vh] items-center gap-12 overflow-visible py-16 lg:grid-cols-2 lg:gap-20">
             {/* left */}
             <div className="max-w-xl space-y-8">
               <span className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-sm font-medium"
@@ -228,7 +228,7 @@ export default function ForPrivateCreditGPsV4() {
             </div>
 
             {/* right — phones */}
-            <div className="relative flex justify-center lg:justify-end">
+            <div className="relative flex justify-center overflow-visible lg:justify-end">
               <div className="relative h-[600px] w-[380px]">
                 <div className="absolute left-0 top-[28px] z-0"><PhoneDetail /></div>
                 <div className="absolute left-[130px] top-0 z-10"><PhoneFeed /></div>

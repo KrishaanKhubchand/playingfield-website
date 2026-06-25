@@ -460,7 +460,7 @@ export default function ForPrivateCreditGPsV2() {
           </div>
 
           {/* phones */}
-          <div className="mt-16 flex justify-center">
+          <div className="mt-16 flex justify-center overflow-visible">
             <div className="relative h-[600px] w-[380px]">
               <div className="absolute left-0 top-[28px] z-0"><PhoneDetail /></div>
               <div className="absolute left-[130px] top-0 z-10"><PhoneFeed /></div>

@@ -242,8 +242,8 @@ export default function ForPrivateCreditGPs() {
     <div className="flex min-h-screen flex-col bg-[#FAF8F4]">
       {/* hero */}
       <main className="flex-1">
-        <div className="container px-4 md:px-6">
-          <div className="grid min-h-[85vh] items-center gap-12 py-16 lg:grid-cols-2 lg:gap-20">
+        <div className="container overflow-visible px-4 md:px-6">
+          <div className="grid min-h-[85vh] items-center gap-12 overflow-visible py-16 lg:grid-cols-2 lg:gap-20">
             {/* left — copy */}
             <div className="max-w-xl space-y-8">
               <PillBadge />
@@ -270,7 +270,7 @@ export default function ForPrivateCreditGPs() {
             </div>
 
             {/* right — phones */}
-            <div className="relative flex justify-center lg:justify-end">
+            <div className="relative flex justify-center overflow-visible lg:justify-end">
               <div className="relative h-[600px] w-[380px]">
                 <div className="absolute left-0 top-[28px] z-0"><PhoneDetail /></div>
                 <div className="absolute left-[130px] top-0 z-10"><PhoneFeed /></div>
