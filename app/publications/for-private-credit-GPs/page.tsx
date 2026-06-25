@@ -181,7 +181,7 @@ function PhoneFeed() {
 
 function PhoneDetail() {
   return (
-    <PhoneFrame className="absolute -right-8 top-8 z-0 md:-right-16 md:top-12">
+    <PhoneFrame className="absolute left-[160px] top-10 z-0 md:left-[180px] md:top-14">
       <div className="rounded-[28px] bg-[#0f172a] px-4 pb-6 pt-3">
         {/* back + source */}
         <div className="mb-3 flex items-center gap-2">
