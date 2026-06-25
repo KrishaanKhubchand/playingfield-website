@@ -181,7 +181,7 @@ function PhoneFeed() {
 
 function PhoneDetail() {
   return (
-    <PhoneFrame className="absolute left-[160px] top-10 z-0 md:left-[180px] md:top-14">
+    <PhoneFrame className="z-0">
       <div className="rounded-[28px] bg-[#0f172a] px-4 pb-6 pt-3">
         {/* back + source */}
         <div className="mb-3 flex items-center gap-2">
@@ -271,9 +271,9 @@ export default function ForPrivateCreditGPs() {
 
             {/* right — phones */}
             <div className="relative flex justify-center lg:justify-end">
-              <div className="relative">
-                <PhoneFeed />
-                <PhoneDetail />
+              <div className="relative h-[620px] w-[420px]">
+                <div className="absolute left-0 top-0"><PhoneFeed /></div>
+                <div className="absolute left-[150px] top-[24px]"><PhoneDetail /></div>
               </div>
             </div>
           </div>
