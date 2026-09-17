@@ -1,7 +1,16 @@
+"use client"
+
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 import { SubscribeButton } from "@/components/subscribe-button"
 
 export function Navigation() {
+  const pathname = usePathname()
+
+  if (pathname === "/new-home" || pathname.startsWith("/new-home/")) {
+    return null
+  }
+
   return (
     <header className="w-full py-8 relative z-10 bg-gray-50">
       <div className="container px-4 md:px-6">
