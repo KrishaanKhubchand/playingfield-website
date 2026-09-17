@@ -2,7 +2,7 @@
 spec_format_version: "0.1"
 title: "Proximity Group Experimental Homepage"
 artifact_type: "prd"
-spec_revision: 2
+spec_revision: 3
 author: "Krishaan Khubchand and Codex"
 created_at: "2026-09-17T00:00:00Z"
 updated_at: "2026-09-17T00:00:00Z"
@@ -40,7 +40,7 @@ in:
   - Use Geist for display and body copy and Geist Mono for section numbers and small metadata.
   - Present three numbered sections: the company proposition, a provisional mission and publication gallery, and careers.
   - Use original Proximity copy focused on building specialist publications and events at the centre of industries.
-  - Use the gallery to present a set of explicitly approved Proximity publications, with one image, name, and concise description for each.
+  - Use the gallery to present three explicitly approved Proximity publications, with one consistently staged cover, name, and concise description for each.
   - Keep the route visually isolated so the existing Playing Field global navigation and light theme do not appear on `/new-home`.
   - Supply page-specific metadata, accessible image alternatives, keyboard-accessible navigation, and responsive mobile behavior.
   - Preserve the existing production homepage and every existing route.
@@ -71,7 +71,8 @@ cut:
 - Header: fixed, approximately 80px high on desktop and 72px on mobile, with a subtle lower border and backdrop treatment.
 - Opening statement: approximately 54px on desktop and 36px on mobile, normal weight, 1.05 line height, and a deliberately controlled three-line measure.
 - Sections: numbered `01`, `02`, and `03`, separated by approximately 64px rather than decorative containers.
-- Gallery: horizontally scrollable 16:9 images, each up to approximately 680px wide, with numbered captions below and a visible partial next item.
+- Gallery: horizontally scrollable 16:9 images, each up to approximately 560px wide, with numbered captions below and a visible partial next item.
+- Gallery artwork: use one warm-charcoal stage, one cover scale, and one shadow treatment across every publication.
 - Shapes: square or minimally rounded controls; no ornamental cards, gradients, illustrations, or floating decoration.
 - Mobile: 20px side padding, a compact menu, section numbers above their content, and touch scrolling for the gallery.
 
@@ -89,15 +90,14 @@ Links without approved destinations may point to sections on `/new-home` during 
 
 **Recommended headline**
 
-> Proximity launches and grows high-quality media and events businesses for the world's industries.
+> Proximity builds high-quality media brands for the world's most dynamic industries.
 
 Recommended desktop line treatment:
 
-> Proximity launches and grows  
-> high-quality media and events  
-> businesses for the world's industries.
+> Proximity builds high-quality media brands  
+> for the world's most dynamic industries.
 
-This is preferred to “Proximity is an incubator that launches and grows new, high quality media and events businesses focused on the world's industries” because it is shorter, more direct, avoids the redundant “incubator that launches,” and makes the company the active subject.
+This is preferred to “Proximity is an incubator that launches and grows new, high quality media and events businesses focused on the world's industries” because it is shorter, more direct, and lets the supporting copy explain the publication-and-events model.
 
 **Recommended supporting copy**
 
@@ -123,7 +123,7 @@ This copy is a layout placeholder for the experiment. It should be revisited as 
 
 The gallery should focus on the different publications Proximity owns or is actively building. Each slide should contain publication-specific artwork or photography, the publication name, and one restrained sentence explaining the industry it serves.
 
-The initial structure should contain four to six publications. Private Credit Journal may be included immediately; every other publication must be approved before implementation so the site does not present an experimental concept as a live portfolio business. Hotel Capital Europe should not be used as the default second example.
+The initial structure contains The Private Credit Journal, The African Infrastructure Journal, and The Technology Investment Journal. Their existing portrait covers should be presented at the same physical scale on the same warm-charcoal background. Hotel Capital Europe and the horizontal Industry Edge artwork are excluded from this experiment.
 
 #### 03 — Careers
 
@@ -188,7 +188,7 @@ This is the selected approach for the experiment. The proposition and provisiona
 - id: AC-6
   criterion: The existing global Playing Field navigation, light background, and route-level styling do not appear on `/new-home`.
 - id: AC-7
-  criterion: The mission gallery presents four to six approved Proximity publications using publication-specific, original or properly licensed images, concise captions, and useful alternative text for each meaningful image.
+  criterion: The mission gallery presents the three approved Proximity publications on identical warm-charcoal 16:9 stages, with consistent cover scale and shadow, concise captions, and useful alternative text for each cover.
 - id: AC-8
   criterion: Every visible navigation item and call to action resolves to an approved route, section, email address, or external destination and no control leads to an empty placeholder page.
 - id: AC-9
@@ -215,7 +215,7 @@ This is the selected approach for the experiment. The proposition and provisiona
   window: before the experiment is considered ready to replace `/`
 - id: SM-2
   metric: moderated_message_comprehension
-  target: ">= 4 of 5 representative readers can explain that Proximity launches and grows specialist media and events businesses after viewing the page for 30 seconds"
+  target: ">= 4 of 5 representative readers can explain that Proximity builds media brands for dynamic industries after viewing the page for 30 seconds"
   target_status: provisional
   target_owner: "Krishaan Khubchand"
   window: during the first review round before root-page promotion
@@ -245,9 +245,9 @@ This is the selected approach for the experiment. The proposition and provisiona
 
 1. **Headline:** Approve the recommended active headline, retain the original “is an incubator” wording, or use the bolder “at the centre” alternative? Current recommendation: use the active headline in section 01 and save “at the centre” for the mission.
 2. **Name treatment:** Should the header use a temporary typeset `Proximity` wordmark, or is there an early logo direction to test? Current recommendation: use a restrained text wordmark for the experiment and treat logo design as separate work.
-3. **Gallery publications:** Which four to six publications should appear, and which are active businesses versus concepts? Private Credit Journal is the only assumed inclusion; every other item requires approval.
-4. **Publication order:** Should the gallery lead with the most established publication, represent the intended future portfolio breadth, or follow a deliberate industry sequence? Current recommendation: lead with the strongest live business, then show breadth.
-5. **Imagery:** Which publication covers, event photographs, or editorial images can Proximity license and confidently publish for each selected publication? This must be resolved before final visual QA.
+3. **Publication status:** Are all three displayed journals approved to be presented publicly as Proximity publications? Current experiment assumes yes; remove any unapproved title before root-page promotion.
+4. **Publication order:** The experiment leads with Private Credit Journal, followed by African Infrastructure Journal and Technology Investment Journal. Confirm this order before root-page promotion.
+5. **Future imagery:** Should the standardized covers eventually be replaced with a consistently photographed editorial series? Current recommendation: keep the unified cover system for the experiment and consider photography during the full brand redesign.
 6. **Careers conversion:** Should `Get in touch` open an email, scheduling link, application form, or existing careers route? A working destination is required before deployment.
 7. **Navigation:** Which non-section destinations should remain visible during the experiment? Hide any item that lacks an approved destination rather than creating placeholders.
 8. **Copyright entity:** What legal entity should appear in the footer during the working-name phase? Current recommendation: omit the entity-specific copyright line until confirmed.
@@ -256,8 +256,8 @@ This is the selected approach for the experiment. The proposition and provisiona
 ## Rollout
 
 1. Review and approve the proposition copy and the role of the word “incubator”; keep the mission explicitly provisional.
-2. Confirm the four to six publications for the gallery, their order, and the public status of each.
-3. Source publication-specific, original or properly licensed imagery and approve a one-sentence caption for each gallery item.
+2. Confirm the three publications in the gallery, their order, and the public status of each.
+3. Use the existing publication covers with one approved stage, scale, and shadow treatment; approve a one-sentence caption for each gallery item.
 4. Confirm the Careers copy, `Get in touch` destination, navigation destinations, and footer treatment.
 5. Implement `/new-home` as an isolated route without altering `/` or shared existing pages.
 6. Run production build, accessibility checks, link checks, and desktop/mobile screenshot review against the reference layout.

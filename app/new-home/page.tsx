@@ -4,7 +4,7 @@ import Link from "next/link"
 export const metadata: Metadata = {
   title: "Proximity Group",
   description:
-    "Proximity launches and grows high-quality media and events businesses for the world's industries.",
+    "Proximity builds high-quality media brands for the world's most dynamic industries.",
 }
 
 const publications = [
@@ -12,33 +12,19 @@ const publications = [
     title: "The Private Credit Journal",
     description:
       "Reporting and convening for the people allocating, raising and deploying private credit.",
-    image: "/images/private-credit-journal-print.png",
-    imageClassName: "object-contain p-5 md:p-8",
-    stageClassName: "bg-[#302b27]",
+    image: "/images/private-credit-journal.png",
   },
   {
     title: "The African Infrastructure Journal",
     description:
       "The projects, financing and developers shaping Africa's next era of infrastructure.",
-    image: "/images/african-infrastructure-journal-print.png",
-    imageClassName: "object-contain p-5 md:p-8",
-    stageClassName: "bg-[#e9e5dc]",
+    image: "/images/african-infrastructure-journal.png",
   },
   {
     title: "The Technology Investment Journal",
     description:
       "The capital, companies and ideas shaping how technology is financed and built.",
     image: "/images/technology-investment-journal.png",
-    imageClassName: "object-contain p-6 md:p-10",
-    stageClassName: "bg-[#17191c]",
-  },
-  {
-    title: "Industry Edge",
-    description:
-      "Conversations with founders building the next generation of category-defining companies.",
-    image: "/images/beyond-fundraise.png",
-    imageClassName: "object-cover",
-    stageClassName: "bg-[#245f68]",
   },
 ]
 
@@ -132,7 +118,7 @@ export default function NewHomePage() {
           <p className="hidden select-none font-mono text-[10px] leading-[1.5] text-white/50 md:col-start-1 md:block">
             01
           </p>
-          <section className="md:col-start-2 md:max-w-[1060px]">
+          <section className="md:col-start-2 md:max-w-[1160px]">
             <p className="mb-3 font-mono text-[10px] leading-[1.5] text-white/50 md:hidden">
               01
             </p>
@@ -140,9 +126,8 @@ export default function NewHomePage() {
               Media &amp; events
             </p>
             <h1 className="text-balance text-[36px] font-normal leading-[1.05] tracking-normal md:text-[54px]">
-              <span className="md:block">Proximity launches and grows</span>{" "}
-              <span className="md:block">high-quality media and events</span>{" "}
-              <span className="md:block">businesses for the world&apos;s industries.</span>
+              <span className="md:block">Proximity builds high-quality media brands</span>{" "}
+              <span className="md:block">for the world&apos;s most dynamic industries.</span>
             </h1>
             <p className="mt-8 max-w-[735px] text-[15px] leading-[1.6] text-[#e2ded2] md:text-[17px]">
               We build specialist publications and year-round event platforms that become
@@ -187,15 +172,13 @@ export default function NewHomePage() {
                 {publications.map((publication, index) => (
                   <figure
                     key={publication.title}
-                    className="w-[min(82vw,680px)] shrink-0 snap-start"
+                    className="w-[min(82vw,560px)] shrink-0 snap-start"
                   >
-                    <div
-                      className={`aspect-[16/9] overflow-hidden border border-white/15 ${publication.stageClassName}`}
-                    >
+                    <div className="flex aspect-[16/9] items-center justify-center overflow-hidden border border-white/15 bg-[#24221f]">
                       <img
                         src={publication.image}
                         alt={`${publication.title} publication artwork`}
-                        className={`h-full w-full ${publication.imageClassName}`}
+                        className="h-[82%] w-auto max-w-[72%] object-contain drop-shadow-[0_18px_22px_rgba(0,0,0,0.35)]"
                       />
                     </div>
                     <figcaption className="mt-3 grid grid-cols-[36px_minmax(0,1fr)] gap-3">
