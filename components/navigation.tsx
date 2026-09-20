@@ -11,7 +11,9 @@ export function Navigation() {
     pathname === "/new-home" ||
     pathname.startsWith("/new-home/") ||
     pathname === "/new-home-2" ||
-    pathname.startsWith("/new-home-2/")
+    pathname.startsWith("/new-home-2/") ||
+    pathname === "/careers-2" ||
+    pathname.startsWith("/careers-2/")
   ) {
     return null
   }

@@ -213,7 +213,7 @@ export default function GalleryHomePage() {
             the ideas moving it forward.
           </p>
           <p className={styles.hiringLink}>
-            We&apos;re hiring: <a href="#careers">see open roles</a>.
+            We&apos;re hiring: <Link href="/careers-2">see open roles</Link>.
           </p>
         </div>
       </section>
@@ -229,13 +229,19 @@ export default function GalleryHomePage() {
           <p>Every brand on the shelf needs people to sell it and people to fill its rooms.</p>
         </div>
 
-        <Link href="/careers" className={`${styles.role} ${styles.salesRole}`}>
+        <Link
+          href="/careers-2#commercial-partnerships"
+          className={`${styles.role} ${styles.salesRole}`}
+        >
           <h3>Sales</h3>
           <p>Sell pages, rooms and audiences to the companies that supply an industry.</p>
           <strong>See sales roles</strong>
         </Link>
 
-        <Link href="/careers" className={`${styles.role} ${styles.eventsRole}`}>
+        <Link
+          href="/careers-2#events-and-community"
+          className={`${styles.role} ${styles.eventsRole}`}
+        >
           <h3>Events and community</h3>
           <p>Build the conferences, dinners and networks where each industry meets.</p>
           <strong>See events roles</strong>
