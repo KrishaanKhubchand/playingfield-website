@@ -7,7 +7,12 @@ import { SubscribeButton } from "@/components/subscribe-button"
 export function Navigation() {
   const pathname = usePathname()
 
-  if (pathname === "/new-home" || pathname.startsWith("/new-home/")) {
+  if (
+    pathname === "/new-home" ||
+    pathname.startsWith("/new-home/") ||
+    pathname === "/new-home-2" ||
+    pathname.startsWith("/new-home-2/")
+  ) {
     return null
   }
 
