@@ -2,7 +2,7 @@ import type React from "react"
 import type { Metadata } from "next"
 import { GeistSans } from "geist/font/sans"
 import { GeistMono } from "geist/font/mono"
-import { Navigation } from "@/components/navigation"
+import { NavigationWrapper } from "@/components/navigation-wrapper"
 import PlausibleProvider from "next-plausible"
 import "./globals.css"
 
@@ -33,7 +33,7 @@ html {
         `}</style>
       </head>
       <body>
-        <Navigation />
+        <NavigationWrapper />
         {children}
       </body>
     </html>

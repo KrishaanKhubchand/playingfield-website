@@ -205,12 +205,7 @@ export default function GalleryHomePage() {
         <div className={styles.introCopy}>
           <p>
             Playingfield is a holding company dedicated to launching and growing media and events
-            brands for the world&apos;s industries. Our ambition is to build the largest, most
-            profitable portfolio of them anywhere.
-          </p>
-          <p>
-            Each publication sits at the front row of its industry, from the people leading it to
-            the ideas moving it forward.
+            brands for the world&apos;s industries.
           </p>
           <p className={styles.hiringLink}>
             We&apos;re hiring: <Link href="/careers-2">see open roles</Link>.
