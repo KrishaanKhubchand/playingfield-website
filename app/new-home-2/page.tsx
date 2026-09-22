@@ -13,9 +13,9 @@ const archivo = Archivo({
 })
 
 export const metadata: Metadata = {
-  title: "Proximity Group | Gallery",
+  title: "Playingfield Group",
   description:
-    "Proximity builds media and events brands focused on the world's industries.",
+    "Playingfield builds media and events brands focused on the world's industries.",
 }
 
 type Publication = {
@@ -179,7 +179,7 @@ export default function GalleryHomePage() {
     <main className={`${archivo.variable} ${archivo.className} ${styles.page}`}>
       <header className={styles.header}>
         <a href="#top" className={styles.brand}>
-          Proximity Group
+          Playingfield Group
         </a>
 
         <nav className={styles.desktopNav} aria-label="Primary navigation">
@@ -204,7 +204,7 @@ export default function GalleryHomePage() {
         <h1>Building media brands focused on the real economy</h1>
         <div className={styles.introCopy}>
           <p>
-            Proximity is a holding company dedicated to launching and growing media and events
+            Playingfield is a holding company dedicated to launching and growing media and events
             brands for the world&apos;s industries. Our ambition is to build the largest, most
             profitable portfolio of them anywhere.
           </p>
@@ -249,8 +249,8 @@ export default function GalleryHomePage() {
       </section>
 
       <footer id="company" className={styles.footer}>
-        <p>Proximity Group. Magazines and events for the world&apos;s industries.</p>
-        <a href="mailto:hey@playingfield.co?subject=Start%20a%20brand%20with%20Proximity">
+        <p>Playingfield Group. Magazines and events for the world&apos;s industries.</p>
+        <a href="mailto:hey@playingfield.co?subject=Start%20a%20brand%20with%20Playingfield">
           Start a brand with us
         </a>
       </footer>
