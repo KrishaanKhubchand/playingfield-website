@@ -11,11 +11,27 @@ type Variation = {
 const variations: Variation[] = [
   {
     href: "/",
-    title: "Default Home — 1440-Inspired",
+    title: "Default Home — Hillclimb-Inspired",
+    org: "Home",
+    style: "single text column + two hiring cards",
+    notes:
+      "Now the live homepage. Modelled on hillclimb.com: wordmark, a short mission note (holding company → the mosaic of industries → each industry is its own world → five-year mission → quarterly batches), then the Sales and Events and community hiring cards. No publication covers until real brands launch.",
+  },
+  {
+    href: "/new-home-2",
+    title: "Gallery Home (previous default)",
+    org: "Home",
+    style: "magazine-cover shelf",
+    notes:
+      "The previous default homepage. \"Building media brands focused on the real economy\" headline over a shelf of eleven concept publication covers (HULL, Kiln, TONNAGE, Sortie, GRID…), then the We're hiring section with Sales and Events cards. Retired because the covers read as live brands before any had launched.",
+  },
+  {
+    href: "/home-3",
+    title: "1440-Inspired Home (earlier default)",
     org: "Home",
     style: "reader-promise + brand mosaic",
     notes:
-      "Now the live homepage. Adapts the join1440.com pattern to Playing Field — subscribe strip, reader-direct hero (\"Go deep on the industries that move markets\"), a mosaic of transparent journal covers (AIJ, HCJ, PCJ, TIJ), four format cards, three-step \"How we do it\" callout, per-brand showcases, and a final email CTA.",
+      "Was the default before the gallery shelf. Adapts the join1440.com pattern to Playing Field — subscribe strip, reader-direct hero (\"Go deep on the industries that move markets\"), a mosaic of transparent journal covers (AIJ, HCJ, PCJ, TIJ), four format cards, three-step \"How we do it\" callout, per-brand showcases, and a final email CTA.",
   },
   {
     href: "/home2",
